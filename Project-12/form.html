@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="head">
+            <h1>Registration</h1>
+        </div>
+        <form action="Project-12/form.html" id="registrationForm" onsubmit="validateForm(event)">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="ABC Kumar">
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" placeholder="abc@email.com">
+            </div>
+            <div class="form-group">
+                <label for="mobile">Phone no.</label>
+                <input type="tel" id="mobile" value="+91 " placeholder="+91 1023456789">
+            </div>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="abc123">
+            </div>
+            <div class="form-group">
+                <label for="password">Create Password</label>
+                <input type="password" id="password" placeholder="ABCabc123@">
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" placeholder="ABCabc123@">
+            </div>
+            <input type="submit" value="Submit" id="submit">
+        </form>
+        <div id="error-message"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    /* background-image: radial-gradient(circle,#ffcccc,#ff9999,#ff6666,#ff3333,#ff0000);
+    border-radius: 50%; */
+    background-color: black;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 500px;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
+    justify-content:space-around;
+    border: 5px solid #ccff00;
+    box-shadow: 0 0 15px #ccff00;
+    border-radius: 10px;
+    transition: 1s;
+}
+.box:hover{
+    transform: scale(1.03);
+    transition: 1s;
+    background-color: yellow;
+    box-shadow: 0 0 50px #ccff00;
+}
+
+.Input{
+    display:flex;
+    justify-content: center;
+}
+.Input input{
+    font-size: 25px;
+    font-weight: 500;
+    width: 330px;
+    height: 50px;
+    background-color: black;
+    text-indent: 10px;
+    outline: #ccff00;
+    border: 2px solid yellow;
+    border-radius: 10px;
+    color: yellow;
+}
+.Input input:hover{
+    border: 2px solid #ccff00;
+}
+.section{
+    display: flex;
+}
+.button{
+    display: flex;
+    width: 50px;
+    height: 30px;
+    margin: 10px;
+    cursor: pointer;
+    padding: 10px;
+    background-color: yellow;
+    transition: .5s;
+    border-radius: 10px;
+    border: 2px solid black;
+
+}
+
+.button:hover{
+    transition: .5s;
+    transform: scale(1.03);
+    box-shadow: 0 0 10px #ccff00,
+                0 0 10px #ccff00,
+                0 0 10px #ccff00;
+    background-color: #ccff00;
+    border: 2px solid yellow;
+}
+.section button{
+    text-align: center;
+    margin: auto;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 45px;
+    height: 30px;
+    color: black;
+}
+#btn1{
+    width: 135px;
+}
+#btn1 button{
+    width: 190px;
+    padding: 0px 0px 20px 0px;
+    margin: auto;
+}

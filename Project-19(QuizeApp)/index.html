@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box-container">
+        <div id="submit"><button type="button" onclick="startQuiz(event)">Start</button></div>
+        <div class="Question">
+            <div id="timer">Remaining time: 00:00</div>
+            <div id="question-number">Question: </div>
+            <div class="option">
+                <div>
+                    <input type="checkbox" id="op1" name="option" value="1" onclick="checkOnlyOne(this)">
+                    <label for="op1" class="op">Option -1 </label><br/>
+                </div>
+                <div>
+                    <input type="checkbox" id="op2" name="option" value="2" onclick="checkOnlyOne(this)">
+                    <label for="op2" class="op">Option -2</label><br/>
+                </div>
+                <div>
+                    <input type="checkbox" id="op3" name="option" value="3" onclick="checkOnlyOne(this)">
+                    <label for="op3" class="op">Option -3</label><br/>
+                </div>
+                <div>
+                    <input type="checkbox" id="op4" name="option" value="4" onclick="checkOnlyOne(this)">
+                    <label for="op4" class="op">Option -4</label><br/>
+                </div>
+            </div>
+            <div class="button">
+                <div><button type="button" onclick="prevQuestion()">Previous</button></div>
+                <div><button type="button" onclick="nextQuestion()">Next</button></div>
+                <div><button type="button" id="showResult" onclick="showResult()">Show result</button></div>
+            </div>
+        </div>
+    </div>
+    <div id="result">
+        <h3>Show Result here</h3>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.box-container{
+    background-color:aquamarine;
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid black;
+}
+#submit{
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#submit button{
+    padding: 20px 40px 20px 40px;
+    background-color:brown;
+    color: white;
+    font-size: larger;
+    font-weight: 700;
+    box-shadow: 5px 5px 1px black;
+    cursor: pointer;
+}
+#submit button:focus{
+    border:2px solid white
+}
+#submit button:hover{
+    transform: scaleX(1.08);
+}
+#timer{
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.Question{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+    font-size: 20px;
+}
+.option{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 30px;
+    font-size: 18px;
+}
+.option div{
+    margin: 15px;
+    font-weight: 500;
+}
+.option div input[type="checkbox"]{
+    width: 20px;
+    height: 18px;    
+}
+.button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.button button{
+    padding: 20px 40px 20px 40px;
+    cursor: pointer;
+    background-color: cyan;
+    box-shadow: 5px 5px 1px black;
+    font-size: large;
+    font-weight: 600;
+}
+.button button:hover{
+    transform: scaleX(1.08);
+    background-color: rgb(2, 180, 180);
+}
+#result{
+    border: 2px solid black;
+    padding: 20px;
+    height: 520px;
+    width: 500px;
+    margin: auto;
+    color: black;
+    background-color:aquamarine;
+    overflow: scroll;
+    overflow-x: hidden;
+    margin-top: 50px;
+}
+#result h3{
+    text-align: center;
+    text-decoration:underline;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        #body{
+            background-color: aqua;
+            display: flex;
+            flex-direction: column;
+            justify-content:space-between;
+            width: 50%;
+            margin: auto;
+            align-items: center;
+            margin-top: 200px;
+            padding-bottom: 100px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border: 5px solid black;
+            border-radius: 15px;
+        }
+        #heading{
+            background-color: black;
+            color: white;
+            padding: 0 45px 0 44px ;
+            border-radius: 10px;
+        }
+        #button{
+            margin-top: 100px;
+        }
+        button{
+            padding: 20px;
+            font-size: 25px;
+            font-weight: bold;
+            cursor: pointer;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="body">
+        <div id="heading"><h1>Welcome to Programming Quiz Competition</h1></div>
+        <div id="button"><button type="button">Click to Start</button></div>
+    </div>
+    <script>
+        document.getElementById("button").addEventListener("click", function() {
+        window.location.href = "index.html";
+    });
+    </script>
+</body>
+</html>

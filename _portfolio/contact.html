@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <script src="https://kit.fontawesome.com/dcaa2f59de.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body{
+            background-color:darkgrey;
+        }
+        #form
+        {
+            display: flex;
+            border: 1px solid black;
+            max-width:fit-content;
+            margin-left: auto;
+            margin-right: auto;
+            flex-wrap: wrap;
+            padding: 50px;
+            background-color: black;
+            box-shadow: 1px 15px 10px black;
+        }
+        form input
+        {
+            border: none;
+            border-bottom: 2px solid yellow;
+            width: 250px;
+            background-color: transparent;
+            color: yellow;
+            height:30px;
+            text-indent: 10px;
+        }
+        form input:focus{
+            outline: none;
+            box-shadow:0px 5px -5px yellow;
+            transition-duration: 1s;
+            background-color: yellow;
+            color: rgb(112, 111, 111);
+            font-weight: 700;
+        }
+        .form div{
+            display: flex;
+            padding: 10px;
+            flex-wrap:wrap;
+            flex-basis: 300;
+            padding-top: 20px;
+            padding-bottom: 30px;
+            flex-basis: 200;
+            
+        }
+        #massege{
+            display:block;
+            resize: none;
+            height: 100px;
+            width: 400px;
+            margin-top: 30px;
+            margin-left: -190px;
+            background-color: transparent;
+            color: white;
+            padding-left: 10px;
+            padding-top: 10px;
+            border-radius: 5px;
+            border: 1px solid white;
+            font-weight: 600;
+            font-size: 15px;
+        }
+        #massege:focus{
+            transition: 1s ease;
+            outline: none;
+            color: white;
+            border: 2px solid yellow;
+            box-shadow: 0px 2px 5px yellow;
+        }
+        #form div label{
+            padding-right: 50px;
+            display: block;
+            color: white;
+        }
+        #submit{
+            color: white;
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            width: fit-content;
+        }
+        #submit button{
+            padding: 10px;
+            cursor: pointer;
+            border: 2px solid yellow;
+            background-color: transparent;
+            color: white;
+            border-radius: 3px;
+            font-size: 30px;
+            padding: 5px 20px 5px  20px;
+        }
+        #submit button:hover{
+            transition: 1s ease;
+            background-color: yellow;
+            color: black;
+            font-weight: 700;
+            box-sizing:border-box;
+            text-shadow: 0px 0px 1px black;
+            box-shadow: 0px 0px 20px yellow;
+        }
+        #head{
+            margin-top: 20px;
+            margin-bottom: 10px;
+            text-align: center;
+            max-width:fit-content;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 5px;
+            color: white;
+        }
+        h1
+        {
+            background-color: black;
+            margin-right:30.5%;
+            margin-left: 30%;
+            box-shadow: 1px -1px 10px black,
+                        -1px 1px 10px black,
+                        1px -1px 10px black,
+                        -1px 1px 10px black;
+        }
+    </style>
+</head>
+<body>
+    <h1><div id="head">Contact us</div></h1>
+    <div id="form">
+        <form action="" method="get" class="form">
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Iron man" autocomplete="off" required><br>
+            </div>
+            <div>
+                <label for="email">E-Mail</label>
+                <input type="email" id="email" placeholder="ironman@email.com" autocomplete="off" required><br>
+            </div>
+            <div>
+                <label for="mobile">Phone</label>
+                <input type="tel" id="mobile" placeholder="+91 900000123" autocomplete="off" required><br>
+            </div>
+            <div>
+                <label>Write your massege</label> 
+                <textarea name="massege" id="massege" placeholder="Hello, sir you are hired . . . ."></textarea>
+            </div>
+            <div id="submit">
+                <button type="submit" value="submit" name="submit"><i class="fa-sharp fa-solid fa-paper-plane"></i></button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

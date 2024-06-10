@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    color: white;
+    background-image: url(bg.jpg);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.head{
+    width: 95%;
+    background-color:rgba(105, 105, 105, 0.34);
+    padding: 20px 0 20px 0;
+    color: orange;
+    text-shadow: 0 0 20px orange;
+    box-shadow: 0 0 20px orange;
+    border-radius: 10px;
+    border: 1px solid yellow;
+}
+.head h1{
+    margin: auto;
+    text-align: center;
+    font-weight: bolder;
+}
+.posts{
+    display: flex;
+    flex-direction:row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.project{
+    padding: 10px 20px 10px 30px;
+    margin: 20px;
+    background-color:rgba(105, 105, 105, 0.332);
+}
+.project h2{
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: orange;
+    color: black;
+    box-shadow: 0 0 10px black;
+}
+.project div{
+    border: 1px solid yellow;
+    margin: 10px 0 10px 0;
+    padding: 10px;
+    box-shadow: 0 0 10px black;
+    transition: .5s;
+}
+.project div:hover{
+    transition: .5s;
+    transform: scale(1.02);
+    box-shadow: 0 0 50px orange;
+}
+.project div ul{
+    margin-top:10px ;
+}
+.project div ul li{
+    margin-left: 20px;
+    padding-bottom: 10px;
+}
+.project div h3{
+    text-shadow: 0 0 5px black;
+    color: orange;
+    text-decoration: underline;
+}
+.project div ul li a{
+    text-decoration: none;
+    color: black;
+    border: 1px solid orange;
+    background-color: rgba(255, 166, 0, 0.315);
+    border-radius: 5px;
+    padding: 1px;
+}

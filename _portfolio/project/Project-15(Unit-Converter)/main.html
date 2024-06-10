@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<label>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit-Converter</title>
+    <link rel="stylesheet" href="style.css">
+</label>
+<body>
+    <h1 id="body-head">Unit-Converter</h1>
+    <div class="body">
+        <div id="unit-mass" class="unit">
+            <form action="#">
+                <h1>Mass Converter</h1><br>
+                <select name="mass-select-1" id="mass-select-1">
+                    <option value="mg">Milligram(mg)</option>
+                    <option value="g">Gram(g)</option>
+                    <option value="kg">kilogram(kg)</option>
+                    <option value="t">Tonne(t)</option>
+                    <option value="st">stone(st)</option>
+                    <option value="lb">Pound(lb)</option>
+                </select><br>
+                <input type="number" name="mass-input" placeholder="e.g. 23.4" id="mass-input"><br>
+                <select name="mass-select-2" id="mass-select-2">
+                    <option value="g">Gram(g)</option>
+                    <option value="mg">Milligram(mg)</option>
+                    <option value="kg">kilogram(kg)</option>
+                    <option value="t">Tonne(t)</option>
+                    <option value="st">stone(st)</option>
+                    <option value="lb">Pound(lb)</option>
+                </select><br>
+                <label class="result" id="show-1">Result</label>
+                <button type="submit" class="btn" onclick="MassConversion(event)">Convert</button>
+            </form>
+        </div>
+        <div id="unit-data" class="unit">
+            <form action="#">
+                <h1>Data Converter</h1><br>
+                <select name="data-select-1" id="data-select-1">
+                    <option value="KB">Kilobyte(KB)</option>
+                    <option value="MB">Megabyte(MB)</option>
+                    <option value="GB">Gigabyte(GB)</option>
+                    <option value="B">Byte(B)</option>
+                    <option value="TB">Terabyte(TB)</option>
+                    <option value="PB">Petabyte(PB)</option>
+                </select><br>
+                <input type="number" name="data-input" placeholder="e.g. 53" id="data-input"><br>
+                <select name="data-select-2" id="data-select-2">
+                    <option value="GB">Gigabyte(GB)</option>
+                    <option value="TB">Terabyte(TB)</option>
+                    <option value="PB">Petabyte(PB)</option>
+                    <option value="B">Byte(B)</option>
+                    <option value="KB">Kilobyte(KB)</option>
+                    <option value="MB">Megabyte(MB)</option>
+                </select><br>
+                <label class="result" id="show-2">Result</label>
+                <button type="submit" name="data" class="btn" onclick="DataConversion(event)">Convert</button>
+            </form>
+        </div>
+        <div id="unit-length" class="unit">
+            <form action="#">
+                <h1>Length Converter</h1><br>
+                <select name="Length-select-1" id="length-select-1">
+                    <option value="KM">Kilometer(km)</option>
+                    <option value="M">Meter(m)</option>
+                    <option value="DM">Decimeter(dm)</option>
+                    <option value="CM">Centimeter(cm)</option>
+                    <option value="MM">Millimeter(mm)</option>
+                    <option value="MI">Mile(mi)</option>
+                </select><br>
+                <input type="number" name="length-input" placeholder="e.g. 53" id="length-input"><br>
+                <select name="length-select-2" id="length-select-2">
+                    <option value="KM">Kilometer(km)</option>
+                    <option value="M">Meter(m)</option>
+                    <option value="DM">Decimeter(dm)</option>
+                    <option value="CM">Centimeter(cm)</option>
+                    <option value="MM">Millimeter(mm)</option>
+                    <option value="MI">Mile(mi)</option>
+                </select><br>
+                <label class="result" id="show-3">Result</label>
+                <button type="submit" name="Length" class="btn" onclick="LengthConversion(event)">Convert</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
